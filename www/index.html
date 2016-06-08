@@ -63,6 +63,11 @@
       <div id="modelDropdown" class="dropdown-content">
       </div>
     </div>
+    <form id="search" onSubmit="searchIt()">
+    	<input type="text" id='textBox' />
+    </form>
+    <div id = 'searchResults'>
+    </div>
     <div id = 'yearsBox'>
     
     </div>
@@ -70,8 +75,12 @@
     	<p id = 'price'></p>
         <p id = 'link' onClick='linkClick()'></p>
     </div>
+    <div id = 'searchButton' onClick="revealSearch()">
+    	search
+    </div>
     <script type="text/javascript" src="js/index.js"></script>
     <script type="text/javascript" src="js/jquery.min.js"></script>
+    <script type="text/javascript" src="js/data.js"></script>
     <script type="text/javascript" src="js/work.js"></script>
     <script type="text/javascript">
         app.initialize();

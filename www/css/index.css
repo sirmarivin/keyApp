@@ -34,6 +34,32 @@ body {
     width:100%;
 }
 /* Dropdown Button */
+#textBox{
+	position:absolute;
+	top: 200px;
+	width: 80%;	
+	left:10%;
+	font-size:36px;
+	text-transform:lowercase;
+}
+#search{
+	visibility:visible;	
+}
+#searchResults{
+	position:absolute;
+	top:260px;
+	left:10%;
+	font-size:16px;	
+	height: 45%;
+	width:80%;
+	overflow:scroll;
+}
+#searchButton{
+	position:absolute;
+	bottom:10px;
+	left:47%;
+	cursor:pointer;
+}
 #makeDDbox{
 	z-index:5;
 	top:30px;
