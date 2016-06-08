@@ -54,7 +54,7 @@ var hondaArray = [['civic',2007,2013,20,'https://mysecuritypro.com/HondaHO03-PTK
 				  ['cr-z',2011,2013,20,'https://mysecuritypro.com/HondaHO03-PTKeyBlanks.aspx'],
 				  ['cr-v',2007,2013,20,'https://mysecuritypro.com/HondaHO03-PTKeyBlanks.aspx'],
 				  ['odyssey',2007,2013,20,'https://mysecuritypro.com/HondaHO03-PTKeyBlanks.aspx'],
-				  ['crosstour',2010,2012,20,'https://mysecuritypro.com/HondaHO03-PTKeyBlanks.aspx']
+				  ['crosstour',2010,2012,20,'https://mysecuritypro.com/HondaHO03-PTKeyBlanks.aspx'],
 				  ['crosstour',2013,2013,32,'https://mysecuritypro.com/HO05-PT.aspx'],
 				  ['accord',2007,2012,20,'https://mysecuritypro.com/HondaHO03-PTKeyBlanks.aspx'],
 				  ['accord',2013,2013,32,'https://mysecuritypro.com/HO05-PT.aspx'],
@@ -156,7 +156,11 @@ function populateModels(){
 		}
 	}
 	else{
-		window.alert("wuz duz fuz")	
+		for(var i = 0; i < modelArray.length; i++){
+			for(var o = 0; o < modelArray[i].length; o++){
+				output += "<p id = "+modelArray[i][o][0]+" onclick = 'changeModel("+i+")'>"+modelArray[i][o][0]+"</p>";
+			}
+		}
 	}
 	document.getElementById("modelDropdown").innerHTML = output;		
 }
