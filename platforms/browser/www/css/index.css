@@ -48,8 +48,11 @@ body {
 #searchResults{
 	position:absolute;
 	top:260px;
-	left:20%;
-	font-size:14px;	
+	left:10%;
+	font-size:16px;	
+	height: 45%;
+	width:80%;
+	overflow:scroll;
 }
 #searchButton{
 	position:absolute;
